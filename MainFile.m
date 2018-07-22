@@ -1,8 +1,6 @@
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% The theory for semiparametric (adaptive) estimation of the GARCH model is reported in Drost and Klaassen (1997), Journal of Econometrics, Volume 81, pp. 193-221 
-% Names of matrices used in this Matlab code follow Drost and Klaassen
-% (1997). See Drost and Klaassen (1997) for more details.   
+% We report Matlab code for Quasi Maximum Likelihood estimation of the GARCH model; moreover, we report a Monte Carlo simulation which shows that the Quasi Maximum Likelihood estimator converges to the true parameters. We use the t5-student innovation for the GARCH process. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -46,10 +44,6 @@ for  i=1: (N-1);
 end
 
 
-%% starting values for the estimation of parameters (maximum likelihood estimation): 
-startingvalues = [0.0001;0.0001; 0.0001];
-lowerbound = [  0 ;  0  ; 0];
-upperbound = [  1;  1; 10];
   
 
 
